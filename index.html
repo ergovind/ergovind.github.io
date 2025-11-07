@@ -1,121 +1,184 @@
+
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Govind — Portfolio</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <meta name="description" content="Personal portfolio / resume — Govind">
+  <title>Govind Kumar Singh — Portfolio</title>
+  <meta name="description" content="Portfolio of Govind Kumar Singh — Project Manager">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <header class="site-header">
+  <header class="header">
     <div class="container">
-      <h1 class="logo">Govind</h1>
+      <div style="display:flex;align-items:center;gap:16px">
+        <div class="logo">Govind Kumar Singh</div>
+        <div class="small" style="color:var(--muted)">Project Manager</div>
+      </div>
       <nav class="nav">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#timeline">Timeline</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section id="hero" class="hero">
-      <div class="container">
-        <h2>WELCOME</h2>
-        <h3>My Name Is GOVIND</h3>
-        <p class="tagline">Consultant • Web Designer • UI/UX • Creative</p>
-        <div class="cta"><a href="#contact" class="btn">Hire Me</a> <a href="#portfolio" class="btn ghost">My Projects</a></div>
+  <main class="container">
+    <section class="hero">
+      <div class="hero-grid">
+        <img src="assets/profile.jpg" alt="Govind profile" class="profile-img">
+        <div>
+          <h1 class="title">Govind Kumar Singh</h1>
+          <div class="tagline">Project Manager</div>
+          <p style="margin-top:12px;color:var(--muted);max-width:70%">Overall 8+ years experience in IT. Currently working as Project Coordinator/Manager at MARGSOFT Technologies. Skilled in project coordination, mockups/wireframes, SRS/URS, training & operational support.</p>
+          <div class="cta">
+            <a class="btn" href="mailto:ergovind1@gmail.com">Email</a>
+            <a class="btn alt" href="https://www.linkedin.com/in/ergovind" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="about" class="section about">
-      <div class="container two-col">
-        <div class="left">
-          <img src="assets/profile.jpg" alt="Govind profile" class="profile">
+    <section id="projects" class="section">
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <h2 style="margin:0">Selected Projects</h2>
+          <div class="search">
+            <input id="projectSearch" class="input" placeholder="Search projects or description...">
+            <button class="btn" onclick="document.getElementById('projectSearch').value=''; document.getElementById('projectSearch').dispatchEvent(new Event('input'))">Clear</button>
+          </div>
         </div>
-        <div class="right">
-          <h3>About Me</h3>
-          <p>I’m Govind — consultant and creative problem-solver with experience in web design, digital strategy and product work. I help startups and SMEs turn ideas into meaningful user experiences.</p>
-          <ul class="meta">
-            <li><strong>Location:</strong> India</li>
-            <li><strong>Email:</strong> your.email@example.com</li>
-            <li><strong>Phone:</strong> +91-XXXXXXXXXX</li>
+
+        <div class="projects-grid" style="margin-top:14px">
+          <div class="project" data-title="UP Mineral Mart (E‑Com Portal)" data-desc="E‑commerce portal developed for Directorate of Geology & Mining" data-url="https://upmineralmart.com/">
+            <img src="assets/demo1.jpg" alt="">
+            <div class="pbody">
+              <strong>UP Mineral Mart (E‑Com Portal)</strong>
+              <div class="small" style="margin-top:6px">E‑commerce portal developed for Directorate of Geology & Mining</div>
+              <div style="margin-top:8px"><a href="https://upmineralmart.com/" target="_blank">Open project</a></div>
+            </div>
+          </div>
+
+          <div class="project" data-title="MineTags & CheckGates" data-desc="Mine tagging & checkgate solutions for DGM" data-url="https://www.minetags.in/">
+            <img src="assets/demo2.jpg" alt="">
+            <div class="pbody">
+              <strong>MineTags & CheckGates</strong>
+              <div class="small" style="margin-top:6px">Mine tagging & checkgate solutions for DGM</div>
+              <div style="margin-top:8px"><a href="https://www.minetags.in/" target="_blank">Open project</a></div>
+            </div>
+          </div>
+
+          <div class="project" data-title="UP Mine Mitra (Online Citizen Services)" data-desc="Online services portal for citizens" data-url="http://updgm.in/">
+            <img src="assets/demo3.jpg" alt="">
+            <div class="pbody">
+              <strong>UP Mine Mitra (Online Citizen Services)</strong>
+              <div class="small" style="margin-top:6px">Online services portal for citizens</div>
+              <div style="margin-top:8px"><a href="http://updgm.in/" target="_blank">Open project</a></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="card">
+        <h2 style="margin:0">Experience</h2>
+        <div style="margin-top:12px;display:grid;gap:12px">
+          <div>
+            <strong>MARGSOFT Technologies (P) Ltd. — Project Coordinator / Manager</strong>
+            <div class="small">Oct 2017 - Present</div>
+            <ul style="margin-top:8px;color:var(--muted)">
+              <li>Coordinate & manage projects from requirement gathering to deployment and training.</li>
+              <li>Draft proposals and present solutions to clients.</li>
+              <li>Design wireframes using Balsamiq and mockup tools.</li>
+              <li>Prepare SRS/URS and user manuals; provide training & operational support.</li>
+            </ul>
+          </div>
+
+          <div>
+            <strong>Sofcon India Pvt. Ltd — Automation Engineer</strong>
+            <div class="small">May 2016 - Jun 2017</div>
+            <ul style="margin-top:8px;color:var(--muted)">
+              <li>PLC programming (Allen-Bradley, Siemens) and SCADA projects.</li>
+              <li>AutoCAD power & control drawings.</li>
+            </ul>
+          </div>
+
+          <div>
+            <strong>Eco Cements Ltd. (ACC) — Mechanical Engineer</strong>
+            <div class="small">Jul 2012 - Jan 2017</div>
+            <ul style="margin-top:8px;color:var(--muted)">
+              <li>Design & erection support for mechanical equipment and pollution control.</li>
+              <li>Project documentation and field coordination.</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="grid-2">
+        <div class="card">
+          <h3 style="margin-top:0">Education</h3>
+          <ul style="color:var(--muted);margin-top:8px">
+            <li><strong>MBA (Operations Management)</strong>, IGNOU (2015)</li>
+            <li><strong>B.Tech (Mechanical)</strong>, Gautam Buddha Technical University (2012)</li>
           </ul>
         </div>
-      </div>
-    </section>
-
-    <section id="skills" class="section skills">
-      <div class="container">
-        <h3>My Skills</h3>
-        <div class="skill-grid">
-          <div class="skill"><strong>Graphic Design</strong><span class="bar"><i style="width:95%"></i></span></div>
-          <div class="skill"><strong>UI Design</strong><span class="bar"><i style="width:85%"></i></span></div>
-          <div class="skill"><strong>Web Design</strong><span class="bar"><i style="width:75%"></i></span></div>
-          <div class="skill"><strong>HTML/CSS</strong><span class="bar"><i style="width:70%"></i></span></div>
-          <div class="skill"><strong>Python</strong><span class="bar"><i style="width:60%"></i></span></div>
-          <div class="skill"><strong>SEO</strong><span class="bar"><i style="width:80%"></i></span></div>
+        <div class="card">
+          <h3 style="margin-top:0">Skills</h3>
+          <div style="margin-top:8px">
+            <span class="skills">
+              <span class="badge">Project Management</span>
+              <span class="badge">Requirement Analysis</span>
+              <span class="badge">Wireframing</span>
+              <span class="badge">SRS/URS</span>
+              <span class="badge">ASP.NET</span>
+              <span class="badge">SQL Server</span>
+              <span class="badge">Technical Support</span>
+            </span>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="portfolio" class="section portfolio">
-      <div class="container">
-        <h3>Portfolio</h3>
-        <div class="projects">
-          <article class="project">
-            <img src="assets/demo1.jpg" alt="">
-            <h4>Web Design Project 1</h4>
-            <p>Short description of the project and technologies used.</p>
-          </article>
-          <article class="project">
-            <img src="assets/demo2.jpg" alt="">
-            <h4>WordPress Project</h4>
-            <p>Short description of the project and impact.</p>
-          </article>
-          <article class="project">
-            <img src="assets/demo3.jpg" alt="">
-            <h4>UI Design</h4>
-            <p>Short description and link to case study.</p>
-          </article>
+    <section id="contact" class="section">
+      <div class="card">
+        <h2 style="margin:0">Contact</h2>
+        <div style="margin-top:12px">
+          <p style="color:var(--muted)">For inquiries or opportunities — reach out.</p>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:8px">
+            <a class="btn" href="mailto:ergovind1@gmail.com">Email: ergovind1@gmail.com</a>
+            <a class="btn alt" href="tel:+919453573706">Call: +91-9453573706</a>
+            <a class="btn alt" href="https://www.linkedin.com/in/ergovind" target="_blank">LinkedIn</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="timeline" class="section timeline">
-      <div class="container">
-        <h3>Work & Education</h3>
-        <ol class="events">
-          <li><time>2010</time><div><strong>High School</strong><p>SSVM — Completed high school.</p></div></li>
-          <li><time>2015</time><div><strong>Graduation</strong><p>B.Com (Hons.)</p></div></li>
-          <li><time>2020</time><div><strong>Post Graduation</strong><p>MBA/PGDM in IT</p></div></li>
-        </ol>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact">
-      <div class="container">
-        <h3>Contact Me</h3>
-        <form id="contactForm" class="contact-form" action="#" method="post" onsubmit="return false;">
-          <input name="name" placeholder="Full name" required>
-          <input name="email" placeholder="Email" required>
-          <textarea name="message" placeholder="Message" rows="4" required></textarea>
-          <button class="btn" type="submit" onclick="alert('Thanks — replace with real handler')">Send</button>
-        </form>
-        <p class="note">Phone: +91-XXXXXXXXXX</p>
-      </div>
-    </section>
+    <footer class="footer">
+      © 2025 Govind Kumar Singh — Built for GitHub Pages
+    </footer>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Govind — Built with a simple one-page template.</p>
+  <!-- Modal -->
+  <div id="projectModal" class="modal-backdrop hidden" style="display:none">
+    <div class="modal">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <div>
+          <h3 id="modalTitle">Project title</h3>
+          <div id="modalDesc" class="small" style="margin-top:6px">Details</div>
+        </div>
+        <div style="display:flex;gap:8px;align-items:center">
+          <a id="modalLink" class="btn alt" href="#" target="_blank">Open</a>
+          <button id="modalClose" class="close-btn">Close</button>
+        </div>
+      </div>
     </div>
-  </footer>
+  </div>
 
-  <script src="assets/js/main.js"></script>
+  <script src="assets/main.js"></script>
 </body>
 </html>
