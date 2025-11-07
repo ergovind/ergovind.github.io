@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -6,52 +5,60 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Govind Kumar Singh — Portfolio</title>
   <meta name="description" content="Portfolio of Govind Kumar Singh — Project Manager">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
   <header class="header">
     <div class="container">
-      <div style="display:flex;align-items:center;gap:16px">
-        <div class="logo">Govind Kumar Singh</div>
-        <div class="small" style="color:var(--muted)">Project Manager</div>
+      <div style="display:flex;align-items:center;gap:12px">
+        <div style="display:flex;align-items:center">
+          <div class="logo">Govind Kumar Singh</div>
+          <div class="small">Project Manager</div>
+        </div>
       </div>
-      <nav class="nav">
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <div style="display:flex;align-items:center;gap:12px">
+        <nav class="nav">
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button id="darkToggle" class="toggle-btn" title="Toggle dark mode">🌙</button>
+      </div>
     </div>
   </header>
 
   <main class="container">
-    <section class="hero">
+    <section class="hero reveal">
       <div class="hero-grid">
-        <img src="assets/profile.jpg" alt="Govind profile" class="profile-img">
+        <div class="profile-wrap">
+          <img src="assets/profile.jpg" alt="Govind profile" class="profile-img">
+        </div>
         <div>
           <h1 class="title">Govind Kumar Singh</h1>
-          <div class="tagline">Project Manager</div>
-          <p style="margin-top:12px;color:var(--muted);max-width:70%">Overall 8+ years experience in IT. Currently working as Project Coordinator/Manager at MARGSOFT Technologies. Skilled in project coordination, mockups/wireframes, SRS/URS, training & operational support.</p>
+          <div style="margin-top:8px;font-size:18px"><span class="tagline"> <strong id="typing">Project Manager</strong> <span class="type" id="typing-end"></span></span></div>
+          <p style="margin-top:14px;color:var(--muted);max-width:75%">Overall 8+ years experience in IT. Currently working as Project Coordinator/Manager at MARGSOFT Technologies. Skilled in project coordination, mockups/wireframes, SRS/URS, training & operational support.</p>
           <div class="cta">
-            <a class="btn" href="mailto:ergovind1@gmail.com">Email</a>
+            <a class="btn" href="mailto:ergovind1@gmail.com">Contact Me</a>
             <a class="btn alt" href="https://www.linkedin.com/in/ergovind" target="_blank" rel="noreferrer">LinkedIn</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="section">
+    <section id="projects" class="section reveal">
       <div class="card">
         <div style="display:flex;justify-content:space-between;align-items:center">
           <h2 style="margin:0">Selected Projects</h2>
-          <div class="search">
+          <div style="display:flex;gap:8px;align-items:center">
             <input id="projectSearch" class="input" placeholder="Search projects or description...">
             <button class="btn" onclick="document.getElementById('projectSearch').value=''; document.getElementById('projectSearch').dispatchEvent(new Event('input'))">Clear</button>
           </div>
         </div>
 
-        <div class="projects-grid" style="margin-top:14px">
+        <div class="projects-grid" style="margin-top:16px">
           <div class="project" data-title="UP Mineral Mart (E‑Com Portal)" data-desc="E‑commerce portal developed for Directorate of Geology & Mining" data-url="https://upmineralmart.com/">
-            <img src="assets/demo1.jpg" alt="">
+            <img src="assets/demo1.jpg" alt="Project demo">
             <div class="pbody">
               <strong>UP Mineral Mart (E‑Com Portal)</strong>
               <div class="small" style="margin-top:6px">E‑commerce portal developed for Directorate of Geology & Mining</div>
@@ -60,7 +67,7 @@
           </div>
 
           <div class="project" data-title="MineTags & CheckGates" data-desc="Mine tagging & checkgate solutions for DGM" data-url="https://www.minetags.in/">
-            <img src="assets/demo2.jpg" alt="">
+            <img src="assets/demo2.jpg" alt="Project demo">
             <div class="pbody">
               <strong>MineTags & CheckGates</strong>
               <div class="small" style="margin-top:6px">Mine tagging & checkgate solutions for DGM</div>
@@ -69,7 +76,7 @@
           </div>
 
           <div class="project" data-title="UP Mine Mitra (Online Citizen Services)" data-desc="Online services portal for citizens" data-url="http://updgm.in/">
-            <img src="assets/demo3.jpg" alt="">
+            <img src="assets/demo3.jpg" alt="Project demo">
             <div class="pbody">
               <strong>UP Mine Mitra (Online Citizen Services)</strong>
               <div class="small" style="margin-top:6px">Online services portal for citizens</div>
@@ -81,7 +88,7 @@
       </div>
     </section>
 
-    <section id="experience" class="section">
+    <section id="experience" class="section reveal">
       <div class="card">
         <h2 style="margin:0">Experience</h2>
         <div style="margin-top:12px;display:grid;gap:12px">
@@ -95,7 +102,6 @@
               <li>Prepare SRS/URS and user manuals; provide training & operational support.</li>
             </ul>
           </div>
-
           <div>
             <strong>Sofcon India Pvt. Ltd — Automation Engineer</strong>
             <div class="small">May 2016 - Jun 2017</div>
@@ -104,7 +110,6 @@
               <li>AutoCAD power & control drawings.</li>
             </ul>
           </div>
-
           <div>
             <strong>Eco Cements Ltd. (ACC) — Mechanical Engineer</strong>
             <div class="small">Jul 2012 - Jan 2017</div>
@@ -113,12 +118,11 @@
               <li>Project documentation and field coordination.</li>
             </ul>
           </div>
-
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section reveal">
       <div class="grid-2">
         <div class="card">
           <h3 style="margin-top:0">Education</h3>
@@ -129,7 +133,7 @@
         </div>
         <div class="card">
           <h3 style="margin-top:0">Skills</h3>
-          <div style="margin-top:8px">
+          <div style="margin-top:10px">
             <span class="skills">
               <span class="badge">Project Management</span>
               <span class="badge">Requirement Analysis</span>
@@ -139,12 +143,20 @@
               <span class="badge">SQL Server</span>
               <span class="badge">Technical Support</span>
             </span>
+            <div style="margin-top:12px">
+              <div class="small">Project Management</div>
+              <div class="skill-bar"><i data-width="92%"></i></div>
+              <div class="small" style="margin-top:8px">Wireframing</div>
+              <div class="skill-bar"><i data-width="84%"></i></div>
+              <div class="small" style="margin-top:8px">Technical Support</div>
+              <div class="skill-bar"><i data-width="76%"></i></div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section">
+    <section id="contact" class="section reveal">
       <div class="card">
         <h2 style="margin:0">Contact</h2>
         <div style="margin-top:12px">
@@ -158,13 +170,13 @@
       </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer reveal">
       © 2025 Govind Kumar Singh — Built for GitHub Pages
     </footer>
   </main>
 
   <!-- Modal -->
-  <div id="projectModal" class="modal-backdrop hidden" style="display:none">
+  <div id="projectModal" class="modal-backdrop">
     <div class="modal">
       <div style="display:flex;justify-content:space-between;align-items:center">
         <div>
@@ -178,6 +190,8 @@
       </div>
     </div>
   </div>
+
+  <button id="backTop" class="back-top">↑ Top</button>
 
   <script src="assets/main.js"></script>
 </body>
